@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         color: Color(hexColor('#142850')),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
@@ -198,21 +198,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Color(hexColor('ffa41b')),
               ),
               margin: EdgeInsets.all(10.0),
-              padding: EdgeInsets.all(5.0),
-              alignment: Alignment.center,
+              padding: EdgeInsets.all(10.0),
+              //alignment: Alignment.center,
               width: MediaQuery.of(context).size.width,
               height: 100.0,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                //mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Icon(
                     Icons.call_made,
                     color: Colors.black,
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
                     child: Text(
-                      'Bugüne kadar ölen eden kişi sayısı: ${data[0]["total_deaths"].toString()}',
+                      'Bugüne kadar ölen kişi sayısı: ${data[0]["total_deaths"].toString()}',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.black, fontSize: 18.0),
                     ),
